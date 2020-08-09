@@ -1,0 +1,10 @@
+authorityKeyIdentifier = keyid, issuer
+basicConstraints = CA:FALSE
+subjectKeyIdentifier = hash
+keyUsage = digitalSignature, keyEncipherment, dataEncipherment, keyAgreement, keyEncipherment, nonRepudiation
+extendedKeyUsage = serverAuth, clientAuth, codeSigning, emailProtection, ipsecIKE
+subjectAltName = @alt_names
+
+[alt_names]
+DNS.1 = pfsense
+DNS.2 = localdomain.pfsense
